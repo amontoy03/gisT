@@ -51,7 +51,7 @@ if st_data and st_data.get("all_drawings"):
     drawing = st_data["all_drawings"][-1]
     if drawing and "geometry" in drawing:
         geom = shape(drawing["geometry"])
-        st.success("Area selected! Displaying data inside:")
+        st.success("Area selected, displaying data inside:")
         for layer in selected_layers:
             file_key = layer.lower().replace(" ", "_")
             file_path = os.path.join("data", f"{file_key}.shp")
