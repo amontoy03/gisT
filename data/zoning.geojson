@@ -1,0 +1,7 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type": "Feature", "properties": {"zone": "Residential"}, "geometry": {"type": "Polygon", "coordinates": [[[0,0], [0,2], [1.5,2], [1.5,0], [0,0]]] }},
+    {"type": "Feature", "properties": {"zone": "Commercial"}, "geometry": {"type": "Polygon", "coordinates": [[[1.5,0], [1.5,2], [3,2], [3,0], [1.5,0]]] }}
+  ]
+}
