@@ -91,7 +91,7 @@ selected_county = st.selectbox("Select County", state_county_map[selected_state]
 st.markdown(f"### Selected Location: {selected_county} County, {selected_state}")
 
 
-layer_options = ["Parcels", "Flood Plains", "Zoning", "Streets", "Cemetery", "Zip Code", "City Boundaries", "Commissioner Precinct", "County Facilities", "County Roads", "Wet Dry Boundaries", "Tarrant County Subcourthouse Locations", "Tarrant County Schools", "Tarrant County Parks", "Tarrant County Libraries", "Tarrant County Fire Stations", "Tarrant County Hospitals", "Tarrant County Police Stations", "Tarrant County Courts", "Tarrant County School Districts", "Tarrant County Voting Locations", "Tarrant County Elections Voting Precinct Boundary"]
+layer_options = ["Parcels", "Flood Plains", "Zoning", "Streets", "Cemetery", "Zip Code", "City Boundaries", "Commissioner Precinct", "County Facilities", "County Roads", "Wet Dry Boundaries", "Tarrant County Subcourthouse Locations", "Tarrant County Schools", "Tarrant County School Districts", "Tarrant County Voting Locations", "Tarrant County Elections Voting Precinct Boundary"]
 selected_layers = st.multiselect("Select Available Data", layer_options)
 
 
