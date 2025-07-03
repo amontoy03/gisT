@@ -104,7 +104,7 @@ Draw(
     draw_options={
         "polyline": False,
         "circle": False,
-        "marker": True,
+        "marker": False,
         "circlemarker": False,
         "rectangle": True,
         "polygon": False,
