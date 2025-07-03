@@ -4,7 +4,9 @@ from folium.plugins import Draw
 from streamlit_folium import st_folium 
 import geopandas as gpd    
 from shapely.geometry import shape
-import os 
+import os
+import glob
+
 
 
 state_county_map = {
@@ -86,11 +88,10 @@ county_coords = {
 
 selected_state = st.selectbox("Select State", list(state_county_map.keys()))
 selected_county = st.selectbox("Select County", state_county_map[selected_state])
-
 st.markdown(f"### Selected Location: {selected_county} County, {selected_state}")
 
 
-layer_options = ["Parcels", "Flood Plains", "Zoning", "Streets"]
+layer_options = ["Parcels", "Flood Plains", "Zoning", "Streets", "Cemetary", "Zip Code"]
 selected_layers = st.multiselect("Select Available Data", layer_options)
 
 
@@ -111,16 +112,29 @@ Draw(
     edit_options={"edit": True},
 ).add_to(m)
 
+
+
+def find_shapefile(base_dir, file_key):
+    folder_glob = os.path.join(base_dir, "*")
+    for folder in glob.glob(folder_glob):
+        if os.path.isdir(folder) and os.path.basename(folder).lower() == file_key.lower():
+            shp_glob = os.path.join(folder, "*.shp")
+            for shp_file in glob.glob(shp_glob):
+                if os.path.splitext(os.path.basename(shp_file))[0].lower() == file_key.lower():
+                    return shp_file
+    return None
+
+
 for layer in selected_layers:
     file_key = layer.lower().replace(" ", "_")
-    file_path = os.path.join("data", f"{file_key}.shp")
-    
+    base_dir = os.path.join("data", selected_state, selected_county)
+    file_path = find_shapefile(base_dir, file_key)
 
-    if os.path.exists(file_path):
+    if file_path and os.path.exists(file_path):
         gdf = gpd.read_file(file_path).to_crs("EPSG:4326")
         folium.GeoJson(gdf, name=layer).add_to(m)
     else:
-        st.warning(f"Missing: {file_path}")
+        st.warning(f"Missing: {file_key} in {selected_county}, {selected_state}")
 
 
 
@@ -137,8 +151,10 @@ if st_data and st_data.get("all_drawings"):
         st.success("Area selected, displaying data inside:")
         for layer in selected_layers:
             file_key = layer.lower().replace(" ", "_")
-            file_path = os.path.join("data", f"{file_key}.shp")
-            if os.path.exists(file_path):
+            base_dir = os.path.join("data", selected_state, selected_county)
+            file_path = find_shapefile(base_dir, file_key)
+
+            if file_path and os.path.exists(file_path):
                 gdf = load_layer(file_path)
                 filtered = gdf[gdf.intersects(geom)]
                 st.subheader(f"{layer} Features")
@@ -148,6 +164,6 @@ if st_data and st_data.get("all_drawings"):
                 else:
                     st.warning("No features found in this area.")
             else:
-                st.warning(f"Missing: {file_path}")
+                st.warning(f"Missing: {file_key} layer.")
 else:
-    st.info("Draw a polygon or rectangle on the map to query features.")
+    st.info("Draw a shape on the map to query features.")
