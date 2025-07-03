@@ -126,7 +126,7 @@ def find_shapefile(base_dir, file_key):
 
 
 for layer in selected_layers:
-    file_key = layer.lower().replace(" ", "_")
+    file_key = layer.replace(" ", "_")
     base_dir = os.path.join("data", selected_state, selected_county)
     file_path = find_shapefile(base_dir, file_key)
 
@@ -150,7 +150,7 @@ if st_data and st_data.get("all_drawings"):
         geom = shape(drawing["geometry"])
         st.success("Area selected, displaying data inside:")
         for layer in selected_layers:
-            file_key = layer.lower().replace(" ", "_")
+            file_key = layer.replace(" ", "_")
             base_dir = os.path.join("data", selected_state, selected_county)
             file_path = find_shapefile(base_dir, file_key)
 
