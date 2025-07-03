@@ -93,7 +93,7 @@ st.markdown(f"### Selected Location: {selected_county} County, {selected_state}"
 
 layer_options = ["Parcels", "Flood Plains", "Zoning", "Streets", "Cemetery", "Zip Code", "City Boundaries", "Commissioner Precinct", "County Facilities", "County Roads", "Wet Dry Boundaries", "Tarrant County Subcourthouse Locations", "Tarrant County Schools", "Tarrant County School Districts", "Tarrant County Voting Locations", "Tarrant County Elections Voting Precinct Boundary", "Tarrant County Building Footprints", "Tarrant County Boundary Line", "Justice Of The Peace  Constable Boundaries",
                  "County Precincts 2021", "ETJ Boundaries", "Incorporated Municipalities", "Road Centerlines", "Site Structure Address Points", "Voting Districts 2022", "Centerlines", "Curbside Collection Customers", "EMS Zones", "Fire Zones", "Priority Roads", "Situs Points", "Watersheds", "Streams", "Open Water", "Park Trails", "Polling Places", "Regional Trails","SCB Parcel", "Storm Culverts", "Water Mains", "Water Pump Stations", "Storm Field Connections"
-                 , "ESN Layer", "Future Land Use", "Streets Layer", "Zoning"]
+                 , "ESN Layer", "Future Land Use", "Streets Layer", "Zoning", "CATCO Cell Towers", "CATCO Cemeteries", "CATCO Channelmarkers", "CATCO Cities"]
 selected_layers = st.multiselect("Select Available Data", layer_options)
 
 
@@ -176,7 +176,7 @@ if st_data and st_data.get("all_drawings"):
                 filtered = gdf[gdf.intersects(geom)]
                 st.subheader(f"{layer} Features")
                 if not filtered.empty:
-                    st.dataframe(filtered.drop(columns="geometry").head(10))
+                    st.dataframe(filtered.drop(columns="geometry").head(20))
                     st.info(f"{len(filtered)} feature(s) found.")
                 else:
                     st.warning("No features found in this area.")
