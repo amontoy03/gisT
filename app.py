@@ -138,6 +138,10 @@ for layer in selected_layers:
             gdf = gdf[gdf.geometry.notnull()]
             gdf = gdf[gdf.geometry.is_valid]
 
+            # Convert datetime columns to strings
+            for col in gdf.select_dtypes(include=["datetime64[ns]"]).columns:
+                gdf[col] = gdf[col].astype(str)
+
             if not gdf.empty:
                 folium.GeoJson(gdf, name=layer).add_to(m)
             else:
