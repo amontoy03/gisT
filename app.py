@@ -103,8 +103,8 @@ Draw(
     position="topleft",
     draw_options={
         "polyline": False,
-        "circle": True,
-        "marker": False,
+        "circle": False,
+        "marker": True,
         "circlemarker": False,
         "rectangle": True,
         "polygon": False,
