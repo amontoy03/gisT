@@ -131,8 +131,19 @@ for layer in selected_layers:
     file_path = find_shapefile(base_dir, file_key)
 
     if file_path and os.path.exists(file_path):
-        gdf = gpd.read_file(file_path).to_crs("EPSG:4326")
-        folium.GeoJson(gdf, name=layer).add_to(m)
+        try:
+            gdf = gpd.read_file(file_path).to_crs("EPSG:4326")
+
+            # Drop invalid or missing geometries
+            gdf = gdf[gdf.geometry.notnull()]
+            gdf = gdf[gdf.geometry.is_valid]
+
+            if not gdf.empty:
+                folium.GeoJson(gdf, name=layer).add_to(m)
+            else:
+                st.warning(f"{layer} shapefile has no valid geometry.")
+        except Exception as e:
+            st.error(f"Error loading {layer}: {e}")
     else:
         st.warning(f"Missing: {file_key} in {selected_county}, {selected_state}")
 
