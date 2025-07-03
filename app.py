@@ -91,7 +91,7 @@ selected_county = st.selectbox("Select County", state_county_map[selected_state]
 st.markdown(f"### Selected Location: {selected_county} County, {selected_state}")
 
 
-layer_options = ["Parcels", "Flood Plains", "Zoning", "Streets", "Cemetery", "Zip Code"]
+layer_options = ["Parcels", "Flood Plains", "Zoning", "Streets", "Cemetery", "Zip Code", "City Boundaries", "Commissioner Precinct", "County Facilities"]
 selected_layers = st.multiselect("Select Available Data", layer_options)
 
 
