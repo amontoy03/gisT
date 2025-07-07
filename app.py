@@ -153,12 +153,16 @@ for layer in selected_layers:
             gdf = gdf[gdf.geometry.is_valid]
 
             if not gdf.empty:
-                popup_fields = [col for col in gdf.columns if col != "geometry"]
-                folium.GeoJson(
-                gdf,
-                name=layer,
-                popup=folium.GeoJsonPopup(fields=popup_fields, aliases=popup_fields, max_width=400)
-                ).add_to(m)
+               for col in gdf.columns:
+                    if gdf[col].dtype.name.startswith("datetime64") or gdf[col].dtype.name == "object":
+                        gdf[col] = gdf[col].astype(str)
+
+                    popup_fields = [col for col in gdf.columns if col != "geometry"]
+                    folium.GeoJson(
+                    gdf,
+                    name=layer,
+                    popup=folium.GeoJsonPopup(fields=popup_fields, aliases=popup_fields, max_width=400)
+                    ).add_to(m)
             else:
                 st.warning(f"{layer} shapefile has no valid geometry.")
         except Exception as e:
