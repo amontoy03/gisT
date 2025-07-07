@@ -185,4 +185,4 @@ if st_data and st_data.get("all_drawings"):
             else:
                 st.warning(f"Missing: {file_key} layer.")
 else:
-    st.info("Draw a shape on the map to query features.")
+    st.info("Draw a shape on the map to show features.")
