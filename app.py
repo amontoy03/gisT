@@ -95,6 +95,7 @@ layer_options = ["Parcels", "Flood Plains", "Zoning", "Streets", "Cemetery", "Zi
                  "County Precincts 2021", "ETJ Boundaries", "Incorporated Municipalities", "Road Centerlines", "Site Structure Address Points", "Voting Districts 2022", "Centerlines", "Curbside Collection Customers", "EMS Zones", "Fire Zones", "Priority Roads", "Situs Points", "Watersheds", "Streams", "Open Water", "Park Trails", "Polling Places", "Regional Trails","SCB Parcel", "Storm Culverts", "Water Mains", "Water Pump Stations", "Storm Field Connections"
                  , "ESN Layer", "Future Land Use", "Streets Layer", "Zoning", "CATCO Cell Towers", "CATCO Cemeteries", "CATCO Channelmarkers", "CATCO Cities", "CACTO Cnty Bndy", "CATCO Farm Forest Hort", "CATCO Road Centerlines", "CATCO Soils", "CATCO Streams", "CATCO Structures", "CATCO Parks", "CATCO Parcels", "CATCO Historical Sites", "CATCO Floodway AE", "Corporate Limits",
                  "Voting Precincts", "Water Bodies", "Water Services Areas", "Water Supply", "Traffic Signals", "Trails Collector", "Turnpike Mile Markers", "US Congressional Districts", "Airports", "Annexations", "Address Centerlines Open Data", "Address Points Open Data", "Airport Overlay Open Data", "Annexations Open Data"]
+
 selected_layers = st.multiselect("Select Available Data", layer_options)
 
 
