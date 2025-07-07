@@ -91,12 +91,22 @@ selected_county = st.selectbox("Select County", state_county_map[selected_state]
 st.markdown(f"### Selected Location: {selected_county} County, {selected_state}")
 
 
-layer_options = ["Parcels", "Flood Plains", "Zoning", "Streets", "Cemetery", "Zip Code", "City Boundaries", "Commissioner Precinct", "County Facilities", "County Roads", "Wet Dry Boundaries", "Tarrant County Subcourthouse Locations", "Tarrant County Schools", "Tarrant County School Districts", "Tarrant County Voting Locations", "Tarrant County Elections Voting Precinct Boundary", "Tarrant County Building Footprints", "Tarrant County Boundary Line", "Justice Of The Peace  Constable Boundaries",
-                 "County Precincts 2021", "ETJ Boundaries", "Incorporated Municipalities", "Road Centerlines", "Site Structure Address Points", "Voting Districts 2022", "Centerlines", "Curbside Collection Customers", "EMS Zones", "Fire Zones", "Priority Roads", "Situs Points", "Watersheds", "Streams", "Open Water", "Park Trails", "Polling Places", "Regional Trails","SCB Parcel", "Storm Culverts", "Water Mains", "Water Pump Stations", "Storm Field Connections"
-                 , "ESN Layer", "Future Land Use", "Streets Layer", "Zoning", "CATCO Cell Towers", "CATCO Cemeteries", "CATCO Channelmarkers", "CATCO Cities", "CACTO Cnty Bndy", "CATCO Farm Forest Hort", "CATCO Road Centerlines", "CATCO Soils", "CATCO Streams", "CATCO Structures", "CATCO Parks", "CATCO Parcels", "CATCO Historical Sites", "CATCO Floodway AE", "Corporate Limits",
-                 "Voting Precincts", "Water Bodies", "Water Services Areas", "Water Supply", "Traffic Signals", "Trails Collector", "Turnpike Mile Markers", "US Congressional Districts", "Airports", "Annexations", "Address Centerlines Open Data", "Address Points Open Data", "Airport Overlay Open Data", "Annexations Open Data"]
+def get_available_layers(state, county):
+    base_path = os.path.join("data", state, county)
+    if not os.path.isdir(base_path):
+        return []
 
-selected_layers = st.multiselect("Select Available Data", layer_options)
+    layer_names = []
+    for folder in glob.glob(os.path.join(base_path, "*")):
+        if os.path.isdir(folder):
+            shp_files = glob.glob(os.path.join(folder, "*.shp"))
+            for shp_file in shp_files:
+                name = os.path.splitext(os.path.basename(shp_file))[0].replace("_", " ")
+                layer_names.append(name)
+    return sorted(list(set(layer_names)))
+
+available_layers = get_available_layers(selected_state, selected_county)
+selected_layers = st.multiselect("Select Available Data", available_layers)
 
 
 location = county_coords.get((selected_state, selected_county), [35.2271, -80.8431])
@@ -142,12 +152,13 @@ for layer in selected_layers:
             gdf = gdf[gdf.geometry.notnull()]
             gdf = gdf[gdf.geometry.is_valid]
 
-            # Convert datetime columns to strings
-            for col in gdf.select_dtypes(include=["datetime64[ns]"]).columns:
-                gdf[col] = gdf[col].astype(str)
-
             if not gdf.empty:
-                folium.GeoJson(gdf, name=layer).add_to(m)
+                popup_fields = [col for col in gdf.columns if col != "geometry"]
+                folium.GeoJson(
+                gdf,
+                name=layer,
+                popup=folium.GeoJsonPopup(fields=popup_fields, aliases=popup_fields, max_width=400)
+                ).add_to(m)
             else:
                 st.warning(f"{layer} shapefile has no valid geometry.")
         except Exception as e:
