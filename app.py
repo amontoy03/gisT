@@ -153,11 +153,15 @@ for layer in selected_layers:
             gdf = gdf[gdf.geometry.is_valid]
 
             if not gdf.empty:
-               for col in gdf.columns:
-                    if gdf[col].dtype.name.startswith("datetime64") or gdf[col].dtype.name == "object":
-                        gdf[col] = gdf[col].astype(str)
+                for col in gdf.columns:
+                    if col != "geometry":
+                        try:
+                            gdf[col] = gdf[col].astype(str)
+                        except Exception:
+                            gdf[col] = gdf[col].apply(lambda x: str(x))
 
                     popup_fields = [col for col in gdf.columns if col != "geometry"]
+    
                     folium.GeoJson(
                     gdf,
                     name=layer,
