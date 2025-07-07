@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?><MD_Metadata xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:xalan="http://xml.apache.org/xalan" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml" xmlns="http://www.isotc211.org/2005/gmd">
+    <language>
+        <LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng" codeSpace="ISO639-2">eng</LanguageCode>
+    </language>
+    <characterSet>
+        <MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode>
+    </characterSet>
+    <hierarchyLevel>
+        <MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" codeSpace="ISOTC211/19115">dataset</MD_ScopeCode>
+    </hierarchyLevel>
+    <hierarchyLevelName>
+        <gco:CharacterString>dataset</gco:CharacterString>
+    </hierarchyLevelName>
+    <contact gco:nilReason="missing"/>
+    <dateStamp>
+        <gco:Date>2019-10-29</gco:Date>
+    </dateStamp>
+    <metadataStandardName>
+        <gco:CharacterString>ISO 19139 Geographic Information - Metadata - Implementation Specification</gco:CharacterString>
+    </metadataStandardName>
+    <metadataStandardVersion>
+        <gco:CharacterString>2007</gco:CharacterString>
+    </metadataStandardVersion>
+    <spatialRepresentationInfo>
+        <MD_VectorSpatialRepresentation>
+            <topologyLevel>
+                <MD_TopologyLevelCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopologyLevelCode" codeListValue="geometryOnly" codeSpace="ISOTC211/19115">geometryOnly</MD_TopologyLevelCode>
+            </topologyLevel>
+            <geometricObjects>
+                <MD_GeometricObjects>
+                    <geometricObjectType>
+                        <MD_GeometricObjectTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_GeometricObjectTypeCode" codeListValue="composite" codeSpace="ISOTC211/19115">composite</MD_GeometricObjectTypeCode>
+                    </geometricObjectType>
+                    <geometricObjectCount>
+                        <gco:Integer>27946</gco:Integer>
+                    </geometricObjectCount>
+                </MD_GeometricObjects>
+            </geometricObjects>
+        </MD_VectorSpatialRepresentation>
+    </spatialRepresentationInfo>
+    <referenceSystemInfo>
+        <MD_ReferenceSystem>
+            <referenceSystemIdentifier>
+                <RS_Identifier>
+                    <code>
+                        <gco:CharacterString>3857</gco:CharacterString>
+                    </code>
+                    <codeSpace>
+                        <gco:CharacterString>EPSG</gco:CharacterString>
+                    </codeSpace>
+                    <version>
+                        <gco:CharacterString>8.8(9.3.1.2)</gco:CharacterString>
+                    </version>
+                </RS_Identifier>
+            </referenceSystemIdentifier>
+        </MD_ReferenceSystem>
+    </referenceSystemInfo>
+    <identificationInfo>
+        <MD_DataIdentification>
+            <citation>
+                <CI_Citation>
+                    <title>
+                        <gco:CharacterString>Land Cover 2017</gco:CharacterString>
+                    </title>
+                    <date gco:nilReason="missing"/>
+                    <presentationForm>
+                        <CI_PresentationFormCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_PresentationFormCode" codeListValue="mapDigital" codeSpace="ISOTC211/19115">mapDigital</CI_PresentationFormCode>
+                    </presentationForm>
+                </CI_Citation>
+            </citation>
+            <abstract>
+                <gco:CharacterString>Anne Arundel County, Maryland is interested in monitoring its changing land cover for planning, zoning and environmental protection purposes. The county is under increasing development pressure and needs to maintain an accurate land cover database so it may guide development in a sustainable way from both economic and environmental perspectives. The land cover layer was designed and built as a continuation of hand-digitized layers compiled in the 1990s. The current layer was completed using primarily automated methods and current high-resolution aerial imagery (6 inch resolution, leaf-off), as a comparison for cost and accuracy to the earlier automated and manually-produced datasets. This version was updated in 2011 using 4-band aerial imagery collected in the spring of 2011 by the State of Maryland. Areas that have undergone change in the period 2008-2011 were updated to reflect those changes, and any inconsistencies found in the 2008 dataset were corrected. An Urban Tree Canopy dataset produced in 2008 by the University of Vermont was used to provide estimates of tree canopy for each polygon, or map unit. The database is suitable for many planning and modeling purposes, but was designed and attributed for input into hydrological water runoff and nutrient loading models.</gco:CharacterString>
+            </abstract>
+            <purpose>
+                <gco:CharacterString>The goal of this project is to provide Anne Arundel County with an accurate representation of land cover in Anne Arundel County. </gco:CharacterString>
+            </purpose>
+            <credit>
+                <gco:CharacterString>Anne Arundel County GIS</gco:CharacterString>
+            </credit>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>Environment</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>DPW</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>AACo</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Land Cover 2017</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>OpenData</gco:CharacterString>
+                    </keyword>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>Environment</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>DPW</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>AACo</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Land Cover 2017</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>OpenData</gco:CharacterString>
+                    </keyword>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>Environment</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>DPW</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>AACo</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Land Cover 2017</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>OpenData</gco:CharacterString>
+                    </keyword>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>Environment</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>DPW</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>AACo</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Land Cover 2017</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>OpenData</gco:CharacterString>
+                    </keyword>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>Environment</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>DPW</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>AACo</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Land Cover 2017</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>OpenData</gco:CharacterString>
+                    </keyword>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <resourceConstraints>
+                <MD_Constraints>
+                    <useLimitation>
+                        <gco:CharacterString>While efforts have been made to ensure the accuracy of this data, Anne Arundel County accepts no liability or responsibility for errors, omissions, or positional inaccuracies in the content of this data. Reliance on this data is at the risk of the user. This data is for illustration purposes only and should not be used for surveying, engineering, or site-specific analysis. For additional information view the GIS Disclaimer.</gco:CharacterString>
+                    </useLimitation>
+                </MD_Constraints>
+            </resourceConstraints>
+            <spatialRepresentationType>
+                <MD_SpatialRepresentationTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector" codeSpace="ISOTC211/19115">vector</MD_SpatialRepresentationTypeCode>
+            </spatialRepresentationType>
+            <language>
+                <LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng" codeSpace="ISO639-2">eng</LanguageCode>
+            </language>
+            <characterSet>
+                <MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode>
+            </characterSet>
+            <environmentDescription>
+                <gco:CharacterString>Esri ArcGIS 12.4.2.19948</gco:CharacterString>
+            </environmentDescription>
+            <extent>
+                <EX_Extent>
+                    <geographicElement>
+                        <EX_GeographicBoundingBox>
+                            <extentTypeCode>
+                                <gco:Boolean>true</gco:Boolean>
+                            </extentTypeCode>
+                            <westBoundLongitude>
+                                <gco:Decimal>-76.45803371079464</gco:Decimal>
+                            </westBoundLongitude>
+                            <eastBoundLongitude>
+                                <gco:Decimal>-76.45324864991201</gco:Decimal>
+                            </eastBoundLongitude>
+                            <southBoundLatitude>
+                                <gco:Decimal>39.031571216422385</gco:Decimal>
+                            </southBoundLatitude>
+                            <northBoundLatitude>
+                                <gco:Decimal>39.03425892866321</gco:Decimal>
+                            </northBoundLatitude>
+                        </EX_GeographicBoundingBox>
+                    </geographicElement>
+                </EX_Extent>
+            </extent>
+        </MD_DataIdentification>
+    </identificationInfo>
+    <distributionInfo>
+        <MD_Distribution>
+            <distributionFormat>
+                <MD_Format>
+                    <name>
+                        <gco:CharacterString>Enterprise Geodatabase Feature Class</gco:CharacterString>
+                    </name>
+                    <version gco:nilReason="missing"/>
+                </MD_Format>
+            </distributionFormat>
+        </MD_Distribution>
+    </distributionInfo>
+</MD_Metadata>
