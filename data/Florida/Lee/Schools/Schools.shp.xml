@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xml:lang="en">
+	<dataIdInfo>
+		<idCredit>Lee County GIS</idCredit>
+		<dataExt>
+			<geoEle>
+				<GeoBndBox esriExtentType="search">
+					<westBL Sync="TRUE">-82.265205</westBL>
+					<eastBL Sync="TRUE">-81.575712</eastBL>
+					<northBL Sync="TRUE">26.776601</northBL>
+					<southBL Sync="TRUE">26.320018</southBL>
+					<exTypeCode>1</exTypeCode>
+				</GeoBndBox>
+			</geoEle>
+		</dataExt>
+		<dataChar>
+			<CharSetCd value="004"/>
+		</dataChar>
+		<resConst>
+			<Consts>
+				<useLimit>&lt;DIV STYLE="text-align:Left;"&gt;&lt;DIV&gt;&lt;DIV&gt;&lt;P&gt;&lt;SPAN&gt;The Lee County GIS Department has provided these GIS data sets as a public information resource. Every reasonable effort has been made to assure the accuracy of the data and other information contained. However, these data, maps, and other information are only as accurate as the source of such data, maps, and other information. Further, the data, maps, and other information on this layer are updated only periodically and therefore may not reflect the most current information.&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;The Lee County GIS Department makes no warranty, representation, or guarantee of any kind regarding either any data or other information provided herein or the sources of such data, maps, or other information. The Lee County GIS Department specifically disclaims all representations or warranties, express or implied, including, without limitation, the implied warranties of merchantability and fitness for a particular purpose.&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;The Lee County GIS Department assumes no liability either for any errors, omissions, or inaccuracies in the information provided regardless of the cause of such or for any decision made, action taken, or action not taken by the user in reliance upon any data, maps, or information provided herein.&lt;/SPAN&gt;&lt;/P&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;</useLimit>
+			</Consts>
+		</resConst>
+		<idCitation>
+			<resTitle>Points of Interest</resTitle>
+			<presForm>
+				<PresFormCd Sync="TRUE" value="005"/>
+			</presForm>
+		</idCitation>
+		<searchKeys>
+			<keyword>POI</keyword>
+			<keyword>Community</keyword>
+			<keyword>Education</keyword>
+			<keyword>Health and Safety</keyword>
+			<keyword>Public Service</keyword>
+			<keyword>Recreation</keyword>
+			<keyword>Transportation</keyword>
+			<keyword>Utility</keyword>
+			<keyword>School</keyword>
+			<keyword>Fire Station</keyword>
+			<keyword>EMS</keyword>
+			<keyword>Library</keyword>
+			<keyword>Park</keyword>
+			<keyword>Golf</keyword>
+			<keyword>Law Enforcement</keyword>
+			<keyword>Police Department</keyword>
+			<keyword>Hospital</keyword>
+		</searchKeys>
+		<idPurp>Point locations for frequently visited places throughout Lee County, FL</idPurp>
+		<idAbs>&lt;DIV STYLE="text-align:Left;"&gt;&lt;DIV&gt;&lt;DIV&gt;&lt;P&gt;&lt;SPAN&gt;Points of interest organized by category, type, and subtype. Categories include Community, Education, Health and Safety, Public Service, Recreation, Transportation, Utility. &lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;These are generally not commercial, for-profit businesses. See Business Tax Accounts for those locations.&lt;/SPAN&gt;&lt;/P&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;</idAbs>
+		<envirDesc Sync="FALSE">Esri ArcGIS 13.4.0.55405</envirDesc>
+		<dataLang>
+			<languageCode Sync="TRUE" value="eng"/>
+			<countryCode Sync="TRUE" value="USA"/>
+		</dataLang>
+		<spatRpType>
+			<SpatRepTypCd Sync="TRUE" value="001"/>
+		</spatRpType>
+	</dataIdInfo>
+	<mdHrLv>
+		<ScopeCd value="005"/>
+	</mdHrLv>
+	<mdChar>
+		<CharSetCd value="004"/>
+	</mdChar>
+	<Esri>
+		<scaleRange>
+			<minScale>500000</minScale>
+			<maxScale>5000</maxScale>
+		</scaleRange>
+		<ArcGISFormat>1.0</ArcGISFormat>
+		<ArcGISProfile>ItemDescription</ArcGISProfile>
+		<DataProperties>
+			<itemProps>
+				<itemName Sync="FALSE">PointsOfInterest</itemName>
+				<nativeExtBox>
+					<westBL Sync="TRUE">569640.409041</westBL>
+					<eastBL Sync="TRUE">794596.666859</eastBL>
+					<southBL Sync="TRUE">722231.783915</southBL>
+					<northBL Sync="TRUE">887965.629664</northBL>
+					<exTypeCode Sync="TRUE">1</exTypeCode>
+				</nativeExtBox>
+				<relatedItems>
+					<item>
+						<itemName/>
+					</item>
+				</relatedItems>
+			</itemProps>
+			<coordRef>
+				<type Sync="TRUE">Projected</type>
+				<geogcsn Sync="TRUE">GCS_North_American_1983</geogcsn>
+				<csUnits Sync="TRUE">Linear Unit: Foot_US (0.304801)</csUnits>
+				<projcsn Sync="TRUE">NAD_1983_StatePlane_Florida_West_FIPS_0902_Feet</projcsn>
+				<peXml Sync="TRUE">&lt;ProjectedCoordinateSystem xsi:type='typens:ProjectedCoordinateSystem' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:typens='http://www.esri.com/schemas/ArcGIS/3.4.0'&gt;&lt;WKT&gt;PROJCS[&amp;quot;NAD_1983_StatePlane_Florida_West_FIPS_0902_Feet&amp;quot;,GEOGCS[&amp;quot;GCS_North_American_1983&amp;quot;,DATUM[&amp;quot;D_North_American_1983&amp;quot;,SPHEROID[&amp;quot;GRS_1980&amp;quot;,6378137.0,298.257222101]],PRIMEM[&amp;quot;Greenwich&amp;quot;,0.0],UNIT[&amp;quot;Degree&amp;quot;,0.0174532925199433]],PROJECTION[&amp;quot;Transverse_Mercator&amp;quot;],PARAMETER[&amp;quot;False_Easting&amp;quot;,656166.6666666665],PARAMETER[&amp;quot;False_Northing&amp;quot;,0.0],PARAMETER[&amp;quot;Central_Meridian&amp;quot;,-82.0],PARAMETER[&amp;quot;Scale_Factor&amp;quot;,0.9999411764705882],PARAMETER[&amp;quot;Latitude_Of_Origin&amp;quot;,24.33333333333333],UNIT[&amp;quot;Foot_US&amp;quot;,0.3048006096012192],AUTHORITY[&amp;quot;EPSG&amp;quot;,2237]]&lt;/WKT&gt;&lt;XOrigin&gt;-17791300&lt;/XOrigin&gt;&lt;YOrigin&gt;-41645400&lt;/YOrigin&gt;&lt;XYScale&gt;3048.0060960121928&lt;/XYScale&gt;&lt;ZOrigin&gt;0&lt;/ZOrigin&gt;&lt;ZScale&gt;1&lt;/ZScale&gt;&lt;MOrigin&gt;0&lt;/MOrigin&gt;&lt;MScale&gt;1&lt;/MScale&gt;&lt;XYTolerance&gt;0.0032808333333333331&lt;/XYTolerance&gt;&lt;ZTolerance&gt;0.001&lt;/ZTolerance&gt;&lt;MTolerance&gt;0.001&lt;/MTolerance&gt;&lt;HighPrecision&gt;true&lt;/HighPrecision&gt;&lt;WKID&gt;102659&lt;/WKID&gt;&lt;LatestWKID&gt;2237&lt;/LatestWKID&gt;&lt;/ProjectedCoordinateSystem&gt;</peXml>
+			</coordRef>
+		</DataProperties>
+		<SyncDate>20250131</SyncDate>
+		<SyncTime>15331800</SyncTime>
+		<ModDate>20250131</ModDate>
+		<ModTime>15331800</ModTime>
+		<CreaDate>20250521</CreaDate><CreaTime>20551100</CreaTime><SyncOnce>TRUE</SyncOnce></Esri>
+	<mdDateSt Sync="TRUE">20250131</mdDateSt>
+	<mdLang>
+		<languageCode Sync="TRUE" value="eng"/>
+		<countryCode Sync="TRUE" value="USA"/>
+	</mdLang>
+	<distInfo>
+		<distFormat>
+			<formatName Sync="TRUE">Enterprise Geodatabase Feature Class</formatName>
+		</distFormat>
+	</distInfo>
+	<mdHrLvName Sync="TRUE">dataset</mdHrLvName>
+	<refSysInfo>
+		<RefSystem>
+			<refSysID>
+				<identCode Sync="TRUE" code="2237"/>
+				<idCodeSpace Sync="TRUE">EPSG</idCodeSpace>
+				<idVersion Sync="TRUE">5.3(9.0.0)</idVersion>
+			</refSysID>
+		</RefSystem>
+	</refSysInfo>
+	<spatRepInfo>
+		<VectSpatRep>
+			<geometObjs Name="PointsOfInterest">
+				<geoObjTyp>
+					<GeoObjTypCd Sync="TRUE" value="004"/>
+				</geoObjTyp>
+				<geoObjCnt Sync="TRUE">1547</geoObjCnt>
+			</geometObjs>
+			<topLvl>
+				<TopoLevCd Sync="TRUE" value="001"/>
+			</topLvl>
+		</VectSpatRep>
+	</spatRepInfo>
+	<spdoinfo>
+		<ptvctinf>
+			<esriterm Name="PointsOfInterest">
+				<efeatyp Sync="TRUE">Simple</efeatyp>
+				<efeageom Sync="TRUE" code="1"/>
+				<esritopo Sync="TRUE">FALSE</esritopo>
+				<efeacnt Sync="TRUE">1547</efeacnt>
+				<spindex Sync="TRUE">TRUE</spindex>
+				<linrefer Sync="TRUE">FALSE</linrefer>
+			</esriterm>
+		</ptvctinf>
+	</spdoinfo>
+	<eainfo>
+		<detailed Name="PointsOfInterest">
+			<enttyp>
+				<enttypl Sync="FALSE">PointsOfInterest</enttypl>
+				<enttypt Sync="TRUE">Feature Class</enttypt>
+				<enttypc Sync="TRUE">1547</enttypc>
+			</enttyp>
+			<attr>
+				<attrlabl Sync="TRUE">OBJECTID</attrlabl>
+				<attalias Sync="TRUE">OBJECTID</attalias>
+				<attrtype Sync="TRUE">OID</attrtype>
+				<attwidth Sync="TRUE">4</attwidth>
+				<atprecis Sync="TRUE">10</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+				<attrdef Sync="TRUE">Internal feature number.</attrdef>
+				<attrdefs Sync="TRUE">Esri</attrdefs>
+				<attrdomv>
+					<udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Shape</attrlabl>
+				<attalias Sync="TRUE">SHAPE</attalias>
+				<attrtype Sync="TRUE">Geometry</attrtype>
+				<attwidth Sync="TRUE">8</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+				<attrdef Sync="TRUE">Feature geometry.</attrdef>
+				<attrdefs Sync="TRUE">Esri</attrdefs>
+				<attrdomv>
+					<udom Sync="TRUE">Coordinates defining the features.</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">GlobalID</attrlabl>
+				<attalias Sync="TRUE">GlobalID</attalias>
+				<attrtype Sync="TRUE">GlobalID</attrtype>
+				<attwidth Sync="TRUE">38</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">POI_ID</attrlabl>
+				<attalias Sync="TRUE">POI ID</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Name</attrlabl>
+				<attalias Sync="TRUE">Name</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">255</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Category</attrlabl>
+				<attalias Sync="TRUE">Category</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">255</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Type</attrlabl>
+				<attalias Sync="TRUE">Type</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">255</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Subtype</attrlabl>
+				<attalias Sync="TRUE">Subtype</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">255</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">County_Operated</attrlabl>
+				<attalias Sync="TRUE">County Operated?</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">1</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Community_Maps</attrlabl>
+				<attalias Sync="TRUE">Community Maps?</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">1</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Critical_Facility</attrlabl>
+				<attalias Sync="TRUE">Critical Facility?</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">1</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">URL</attrlabl>
+				<attalias Sync="TRUE">URL</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">255</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Image_URL</attrlabl>
+				<attalias Sync="TRUE">Image URL</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">255</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Source</attrlabl>
+				<attalias Sync="TRUE">Source</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">50</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Source_ID</attrlabl>
+				<attalias Sync="TRUE">Source ID</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">255</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Last_Verified_Date</attrlabl>
+				<attalias Sync="TRUE">Last Verified Date</attalias>
+				<attrtype Sync="TRUE">Date</attrtype>
+				<attwidth Sync="TRUE">8</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">MSLINK_NG911</attrlabl>
+				<attalias Sync="TRUE">MSLINK_NG911</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">4</attwidth>
+				<atprecis Sync="TRUE">10</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">MSLINK_MSN</attrlabl>
+				<attalias Sync="TRUE">MSLINK_MSN</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">4</attwidth>
+				<atprecis Sync="TRUE">10</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">MSLINK_RCL</attrlabl>
+				<attalias Sync="TRUE">MSLINK_RCL</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">4</attwidth>
+				<atprecis Sync="TRUE">10</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Add_Number</attrlabl>
+				<attalias Sync="TRUE">Address Number</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">4</attwidth>
+				<atprecis Sync="TRUE">10</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">St_PreDir</attrlabl>
+				<attalias Sync="TRUE">Street Name Pre Directional</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">9</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">St_Name</attrlabl>
+				<attalias Sync="TRUE">Street Name</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">60</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">St_PosTyp</attrlabl>
+				<attalias Sync="TRUE">Street Name Post Type</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">50</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">St_PosDir</attrlabl>
+				<attalias Sync="TRUE">Street Name Post Directional</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">9</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Full_St_Name</attrlabl>
+				<attalias Sync="TRUE">Full Street Name</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">255</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Building</attrlabl>
+				<attalias Sync="TRUE">Building</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">75</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Unit</attrlabl>
+				<attalias Sync="TRUE">Unit</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">75</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Post_Comm</attrlabl>
+				<attalias Sync="TRUE">Postal Community Name</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">40</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Post_Code</attrlabl>
+				<attalias Sync="TRUE">Postal Code</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">7</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Full_Address</attrlabl>
+				<attalias Sync="TRUE">Full_Address</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">255</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">County</attrlabl>
+				<attalias Sync="TRUE">County</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">100</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">State</attrlabl>
+				<attalias Sync="TRUE">State</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">25</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">State_Abbreviation</attrlabl>
+				<attalias Sync="TRUE">State Abbreviation</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">2</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">created_user</attrlabl>
+				<attalias Sync="TRUE">created_user</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">255</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">created_date</attrlabl>
+				<attalias Sync="TRUE">created_date</attalias>
+				<attrtype Sync="TRUE">Date</attrtype>
+				<attwidth Sync="TRUE">8</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">last_edited_user</attrlabl>
+				<attalias Sync="TRUE">last_edited_user</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">255</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">last_edited_date</attrlabl>
+				<attalias Sync="TRUE">last_edited_date</attalias>
+				<attrtype Sync="TRUE">Date</attrtype>
+				<attwidth Sync="TRUE">8</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Source_GlobalID</attrlabl>
+				<attalias Sync="TRUE">Source_GlobalID</attalias>
+				<attrtype Sync="TRUE">GUID</attrtype>
+				<attwidth Sync="TRUE">38</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+		</detailed>
+	</eainfo>
+	<Binary>
+		<Thumbnail>
+			<Data EsriPropertyType="PictureX">/9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a
+HBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIy
+MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCADIASwDAREA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2sLJ/
+eGP92gCQ96AEFACpgk4wTQBlr/aMmru7MkVlEuAvUyE9/bGP1pa3HpYsXMNrcmJpwH8pw6+xotcV
+7E4njIyWFMBfMT+8tACrIh6MtAEU+x9rZDBTkgUCJkO4Ag8UDHAHBwaAF6Dnk9qAHEiROSN4/WgC
+BgqjJzgc0AVzqCB/lXI9aBXI7wieNZ06dGHoaAKVMQUAFABQAUAFABQAUARXDTrCzW0BmkHRM4zS
+Y0bdvbrEgJXD459qB2C1vILyLzbeQOgJXI9aSdwasWdhPP3R60wGyJHJE0bIGRxhg3cUAMggjtol
+hhQJGgwqjsKQD+w/wpgMkkCg4IyKAMqXVHF6lttYl1Lhgvy8Y7/jRfWwulyyguJDuDbQT19qALKw
+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</Data>
+		</Thumbnail>
+	</Binary>
+</metadata>
