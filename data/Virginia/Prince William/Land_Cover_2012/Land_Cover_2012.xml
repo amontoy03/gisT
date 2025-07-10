@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <origin/>
+                <pubdate>20170329</pubdate>
+                <title>Land Cover 2012</title>
+                <geoform>vector digital data</geoform>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>A Green Infrastructure map county of Prince William, VA was developed to provide quantification of canopy and associated data for environmental monitoring. Digital aerial imagery, collected for the National Agriculture Imagery (NAIP) program at 1 meter resolution was classified to a Green Infrastructure Level 1 classification scheme with the following classes: 1) Non Woody Vegetation, 2)Woody Vegetation, 3) Impervious, 4) Water and 5) Bare Soil. The image was classified using Classification and Regression Tree techniques (CART analysis) and raster modeling. The classification accuracy assessment gave an overall accuracy of 95.25%This 2012 update is the result of a change detection process which buillt on the original 2008 classification. Changed areas were updated, and several other classification scheme changes were made, such as the reclassification of pools as impervious surfaces.</abstract>
+            <purpose>These data were developed in order to perform landcover and canopy assessments and to provide the county of Prince William with a current synopsis of their landscape.</purpose>
+        </descript>
+        <timeperd>
+            <timeinfo>
+                <rngdates>
+                    <begdate>20120101</begdate>
+                    <enddate>20120601</enddate>
+                </rngdates>
+            </timeinfo>
+            <current>Prince William County, excluding the City of Manassas and Manassas Park; Landcover . Temporal Extent - The 2008 Landcover was updated in 2012 using 2012 NAIP and VGIN Imagery</current>
+        </timeperd>
+        <status>
+            <progress>Complete</progress>
+            <update>None planned</update>
+        </status>
+        <spdom>
+            <bounding>
+                <westbc>-77.719713</westbc>
+                <eastbc>-77.212747</eastbc>
+                <northbc>38.943167</northbc>
+                <southbc>38.499758</southbc>
+            </bounding>
+        </spdom>
+        <keywords>
+            <theme>
+                <themekt>ISO 19115 Topic Categories</themekt>
+                <themekey>Environment</themekey>
+                <themekey>ImageryBaseMapsEarthCover</themekey>
+            </theme>
+            <theme>
+                <themekt>None</themekt>
+                <themekey>Prince William County</themekey>
+                <themekey>Landcover</themekey>
+                <themekey>Virginia</themekey>
+                <themekey>Green Infrastructure</themekey>
+                <themekey>NOVA Northern Virginia</themekey>
+                <themekey>PWC</themekey>
+            </theme>
+        </keywords>
+        <accconst>None</accconst>
+        <useconst>All data Pursuant to Section 54.1-402, paragraph C of the Code of Virginia which is quoted below, since the data was not created, nor is it maintained under the supervision of a licensed land surveyor. “Any determination of topography or contours, or any depiction of physical improvements, property lines or boundaries is for general information only and shall not be used for the design, modification, or construction of improvements to real property or for flood plain determination.”This data is for reference purposes only and should not be used for design work.Prince William County hereby disclaims any and all liability or responsibility for any damage, injury, loss, claim, or lawsuit arising from any error, inaccuracy or other problem with either the digital maps contained with digital data delivery or digital data delivered. The User hereby releases the County, its officers, agents and all employees and volunteers, from all liability, damage, claims, injuries or suits arising from any such error, inaccuracy or problem. Furthermore, the User agrees to indemnify and hold harmless the County and its officers, agents and all employees and volunteers, from any and all claims, liability damages, injuries and suits arising from the use of the digital maps and data therein or thereon by the User, its employees or assignees, or by any third parties.Prince William County reserves the right to deny access to certain datasets.The digital maps and data provided hereunder are provided &amp;quot;as is&amp;quot; and the County expressly disclaims all warranties, UCC and otherwise, express or implied including warranties as to accuracy of the digital maps, data and merchantability and fitness for a particular purpose, and further expressly disclaims responsibility for all incidental, consequential or special damages arising out of or in connection with the use or performance of the digital maps and data.User acknowledges this disclaimer of warranty and expressly waives all warranties express or implied and waives any right of claim for damages incidental, consequential or special, arising out of or in connection with the use or performance of the digital maps and data.</useconst>
+        <ptcontac>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>Prince William County Department of Information Technology, GIS Division</cntorg>
+                    <cntper>GIS Service Counter</cntper>
+                </cntorgp>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>5 County Complex Court, Suite 140</address>
+                    <city>Woodbridge</city>
+                    <state>VA</state>
+                    <postal>22192</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>703-792-6840</cntvoice>
+                <cntfax>703-792-7192</cntfax>
+                <cntemail>pwcmaps@pwcgov.org</cntemail>
+                <hours>8 am to 4 pm</hours>
+            </cntinfo>
+        </ptcontac>
+        <datacred>Prince William County Department of Information Technology (DOIT), Geographic Information Systems (GIS) Division</datacred>
+        <native>Version 6.2 (Build 9200) ; Esri ArcGIS 10.4.1.5713</native>
+    </idinfo>
+    <dataqual>
+        <attracc>
+            <attraccr>Overall Map Accuracy: 95.25% Minimum Mapping Unit for Assessment: 0.05 acres User's Accuracy: Non Woody Vegetation: 90.51% Woody Vegetation: 96.77% Impervious: 98,13% Water: 94.83% Bare Soil: 96.55% Producer's Accuracy: Non Woody Vegetation: 95.33% Woody Vegetation: 94.34% Impervious: 96.91% Water: 98.21% Bare Soil: 90.32%</attraccr>
+            <qattracc>
+                <attraccv>95.52%</attraccv>
+                <attracce>Accuracy assessment per Congalton and Green (2009) involving photointerpretation of 589 points randomly selected throughout the county. Photointerpretation was reference to 2012 NAIP imagery.</attracce>
+            </qattracc>
+        </attracc>
+        <logic>None</logic>
+        <complete>None</complete>
+        <lineage>
+            <procstep>
+                <procdesc>In 2014, Sanborn updated the 2008 land cover data for the County – any changes in land cover that are greater than .01 acres were updated to new ground conditions. Sanborn used a change detection approach to find out where changes have occurred and updated only those areas with changes. The leveraged all existing work and involved both datasets provided by the County and change detection performed by Sanborn using imagery from 2008 and 2012. This methodology provided the best way to get a product that allows for trend analysis, and in the most economical way possible. The final end product was an updated land cover dataset, similar to the 2008 dataset, with the same five classes: 1) Non Woody Vegetation, 2) Woody Vegetation, 3) Impervious, 4) Water and 5) Bare Soil. The minimum mapping unit (MMU) is .01 acres but accuracy was assessed using the same .05 acres MMU as was done in 2008. The product will have accuracy of 90% or greater using standard accuracy assessment protocols. The data covers the extent of the County excluding the City of Manassas. Using our change detection methodology, we created a change mask and the imagery within the change mask was classified using methods similar to those used in 2008. These automated data was manually edited by trained technicians. The data was quality controlled to make sure that the delineations are accurate. Countywide data were provided in draft format to the County for review, and all comments and feedback from the County was incorporated into a final delivery. The final delivery was made in raster and vector format and included metadata and an accuracy assessment.</procdesc>
+                <procdate>20121205</procdate>
+            </procstep>
+        </lineage>
+    </dataqual>
+    <spdoinfo>
+        <direct>Vector</direct>
+        <ptvctinf>
+            <sdtsterm>
+                <sdtstype>GT-polygon composed of chains</sdtstype>
+                <ptvctcnt>242978</ptvctcnt>
+            </sdtsterm>
+        </ptvctinf>
+    </spdoinfo>
+    <eainfo>
+        <detailed>
+            <enttyp>
+                <enttypl>Land Cover 2012</enttypl>
+                <enttypd>Table of Attributes</enttypd>
+                <enttypds>ESRI</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>grid_code</attrlabl>
+                <attrdef>1 Non Woody Vegetation 
+2 Woody Vegetation 
+3 Impervious 
+4 Water 
+5 Bare Soil</attrdef>
+                <attrdefs>Sanborn Mapping Protocol</attrdefs>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>1 through 5</edomv>
+                        						
+                        <edomvd>Land Cover Class Code</edomvd>
+                        						
+                        <edomvds>Sanborn Mapping Protocol</edomvds>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <udom>See Above</udom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>4</edomv>
+                        						
+                        <edomvd>Water</edomvd>
+                        						
+                        <edomvds>Sanborn Mapping Protocol</edomvds>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>1</edomv>
+                        						
+                        <edomvd>Non Woody Vegetation</edomvd>
+                        						
+                        <edomvds>Sanborn Mapping Protocol</edomvds>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>3</edomv>
+                        						
+                        <edomvd>Impervious</edomvd>
+                        						
+                        <edomvds>Sanborn Mapping Protocol</edomvds>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>5</edomv>
+                        						
+                        <edomvd>Bare Soil</edomvd>
+                        						
+                        <edomvds>Sanborn Mapping Protocol</edomvds>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>2</edomv>
+                        						
+                        <edomvd>Woody Vegetation</edomvd>
+                        						
+                        <edomvds>Sanborn Mapping Protocol</edomvds>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrmfrq>011</attrmfrq>
+            </attr>
+            <attr>
+                <attrlabl>Id</attrlabl>
+                <attrdef>Unique Id assigned by Sanborn - Integer</attrdef>
+                <attrdefs>Sanborn</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>Sequential unique whole numbers</udom>
+                    				
+                </attrdomv>
+                <attrmfrq>011</attrmfrq>
+            </attr>
+            <attr>
+                <attrlabl>OBJECTID</attrlabl>
+                <attrdef>Internal feature number. System Value</attrdef>
+                <attrdefs>Esri</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>Sequential unique whole numbers that are automatically generated.</udom>
+                    				
+                </attrdomv>
+                <attrmfrq>011</attrmfrq>
+            </attr>
+            <attr>
+                <attrlabl>Class_names</attrlabl>
+                <attrdef>1 Non Woody Vegetation - (Grass, cropland, pasture, hay, etc) 
+2 Woody Vegetation - Trees, shrubs 
+3 Impervious - (Pavement, buildings, structures, including pools) 
+4 Water, Open Water 
+5 Bare Land (Sand, gravel, dirt)</attrdef>
+                <attrdefs>Sanborn Prince William Land Cover Workplan 2014</attrdefs>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>Background</edomv>
+                        						
+                        <edomvd>Background (No Data)</edomvd>
+                        						
+                        <edomvds>Sanborn Mapping Protocol</edomvds>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <udom>See Above</udom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>4</edomv>
+                        						
+                        <edomvd>Open Water</edomvd>
+                        						
+                        <edomvds>Sanborn Mapping Protocol</edomvds>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>2</edomv>
+                        						
+                        <edomvd>Woody vegetation: trees, shrubs</edomvd>
+                        						
+                        <edomvds>Sanborn Mapping Protocol</edomvds>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>1</edomv>
+                        						
+                        <edomvd>Non-woody vegetation (Grass, cropland, pasture, hay, etc)</edomvd>
+                        						
+                        <edomvds>Sanborn Mapping Protocol</edomvds>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>3</edomv>
+                        						
+                        <edomvd>Impervious surfaces (pavement, buildings, structures, includes compressed areas such as dirt roads, also pools)</edomvd>
+                        						
+                        <edomvds>Sanborn Mapping Protocol</edomvds>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>5</edomv>
+                        						
+                        <edomvd>Bare land (sand, gravel, dirt)</edomvd>
+                        						
+                        <edomvds>Sanborn Mapping Protocol</edomvds>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrmfrq>011</attrmfrq>
+            </attr>
+            <attr>
+                <attrlabl>SHAPE.AREA</attrlabl>
+                <attrdef>Feature Geometry</attrdef>
+                <attrdefs>ESRI</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>Coordinates defining the feature</udom>
+                    				
+                </attrdomv>
+                <attrmfrq>011</attrmfrq>
+            </attr>
+            <attr>
+                <attrlabl>GLOBALID</attrlabl>
+                <attrdef>Global ID system field</attrdef>
+                <attrdefs>ESRI</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>System field</udom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SHAPE.LEN</attrlabl>
+                <attrdef>ESRI System Variable</attrdef>
+                <attrdefs>ESRI</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>System Variable</udom>
+                    				
+                </attrdomv>
+                <attrmfrq>011</attrmfrq>
+            </attr>
+            <attr>
+                <attrlabl>SHAPE</attrlabl>
+                <attrdef>Feature geometry.</attrdef>
+                <attrdefs>Esri</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>Coordinates defining the features.</udom>
+                    				
+                </attrdomv>
+                <attrmfrq>011</attrmfrq>
+            </attr>
+        </detailed>
+    </eainfo>
+    <metainfo>
+        <metd>20170329</metd>
+        <metc>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>Prince William County Department of Information Technology, GIS Division</cntorg>
+                    <cntper>GIS Service Counter</cntper>
+                </cntorgp>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>5 County Complex Court, Suite 140</address>
+                    <city>Woodbridge</city>
+                    <state>VA</state>
+                    <postal>22192</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>703-792-6840</cntvoice>
+                <cntfax>703-792-7192</cntfax>
+                <cntemail>pwcmaps@pwcgov.org</cntemail>
+                <hours>8 am to 4 pm</hours>
+            </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</metadata>
